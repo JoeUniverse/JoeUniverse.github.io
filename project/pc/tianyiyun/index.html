@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>天翼云</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=338">
+</head>
+<body>
+	<div class="content-box">
+		<div class="content">
+			<img src="img/coin-1.png" alt="" class="coin coin-1">
+			<img src="img/coin-bg.png" alt="" class="coin-bg coin-bg1">
+			<img src="img/coin-2.png" alt="" class="coin coin-2">
+			<img src="img/coin-bg.png" alt="" class="coin-bg coin-bg2">
+			<img src="img/coin-3.png" alt="" class="coin coin-3">
+			<img src="img/coin-bg.png" alt="" class="coin-bg coin-bg3">
+			<img src="img/coin-4.png" alt="" class="coin coin-4">
+			<img src="img/coin-bg.png" alt="" class="coin-bg coin-bg4">
+			<img src="img/coin-5.png" alt="" class="coin coin-5">
+			<img src="img/coin-bg.png" alt="" class="coin-bg coin-bg5">
+			<img src="img/bottom-1.png" alt="" class="bottom bottom-1">
+			<img src="img/bottom-2.png" alt="" class="bottom bottom-2">
+			<img src="img/bottom-3.png" alt="" class="bottom bottom-3">
+			<img src="img/center-1.png" alt="" class="center center-1">
+			<img src="img/center-2.png" alt="" class="center center-2">
+			<img src="img/center-3.png" alt="" class="center center-3">
+		   	<img src="img/light.png" alt="" class="light">
+		   	<img src="img/light.png" alt="" class="light light-1">
+		   	<img src="img/light.png" alt="" class="light light-2">
+		   	<img src="img/center-bg.png" alt="" class="center-bg center-bg1">
+		   	<img src="img/center-bg.png" alt="" class="center-bg center-bg2">
+		   	<img src="img/center-bg.png" alt="" class="center-bg center-bg3">
+		   	<img src="img/circle.png" alt="" class="circle circle-1">
+		   	<img src="img/circle.png" alt="" class="circle circle-2">
+		   	<img src="img/circle.png" alt="" class="circle circle-3">
+		   	<img src="img/circle.png" alt="" class="circle circle-4">
+		   	<img src="img/cloud.png" alt="" class="cloud">
+		   	<img src="img/last.png" alt="" class="last">
+		   	<img src="img/house-1.png" alt="" class="house house-1">
+		   	<img src="img/house-2.png" alt="" class="house house-2">
+		   	<img alt="" src="img/dot.png" class="dot dot-1">
+		   	<img alt="" src="img/dot.png" class="dot dot-2">
+		   	<img alt="" src="img/dot.png" class="dot dot-3">
+		   	<img alt="" src="img/dot.png" class="dot dot-4">
+		   	<img alt="" src="img/dot.png" class="dot dot-5">
+		   	<img alt="" src="img/dot.png" class="dot dot-6">
+		   	<img alt="" src="img/dot.png" class="dot dot-7">
+		   	<img alt="" src="img/dot.png" class="dot dot-8">
+		   	<img alt="" src="img/dot.png" class="dot dot-9">
+		   	<img alt="" src="img/dot.png" class="dot dot-10">
+		   	<img src="img/computer.png" alt="" class="computer">
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+<script>
+		$(document).ready(function() {
+			var sal = innerWidth / 1920;
+			$(".content").css({"transform":"scale("+sal+")","-webkit-transform":"scale("+sal+")"});
+			$(".content-box").css("height",$(".content").height()*sal);
+			$(window).resize(function() {
+				sal = innerWidth / 1920;
+				$(".content").css({"transform":"scale("+sal+")","-webkit-transform":"scale("+sal+")"});
+				$(".content-box").css("height",$(".content").height()*sal);
+			});
+
+
+
+		})
+	</script>
+</body>
