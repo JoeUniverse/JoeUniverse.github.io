@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>Go！运动</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=21">
+</head>
+<body>
+
+	<div id="audio-btn" class="rotate">
+		<audio id="media" autoplay preload loop src="img/music.mp3"></audio>
+	</div>
+
+	<div class="content-box">
+
+		<!-- 首页 -->
+		<div class="content content-index">
+			<img class="logo-1 animated fadeInDown" src="img/logo-1.png" alt="">
+			<img class="title-1 animated fadeInUp" src="img/title-1.png" alt="">
+			<img class="title-2 animated fadeInDown" src="img/title-2.png" alt="">
+			<img class="part-1 animated fadeInUp" src="img/part-1.png" alt="">
+			<img class="part-2 animated fadeInLeft" src="img/part-2.png" alt="">
+			<img class="part-3 animated fadeInLeft" src="img/part-3.png" alt="">
+			<img class="part-4 animated fadeInRight" src="img/part-4.png" alt="">
+			<img class="part-5 animated fadeInRight" src="img/part-5.png" alt="">
+			<img class="lines" src="img/lines.png" alt="">
+			<img class="btn-start animated zoomIn" src="img/btn-start.png" alt="">
+		</div>
+
+		<!-- 第一关 -->
+		<div class="content content-part1">
+			<!-- <span class="aaa"></span> -->
+			<img class="parts" src="img/part1.png" alt="">
+			<div class="timer-box">
+				<img class="timer-1" src="img/timer-1.png" alt="">
+				<div class="timer-2"></div>
+				<div class="time">15s</div>
+			</div>
+			<div class="mileage-box">
+				<span class="mileage">0</span>
+				<img class="bg-mileage" src="img/bg-mileage.png" alt="">
+			</div>
+			<div class="runway-box">
+				<img class="runWoman" src="img/woman-1.png" alt="">
+				<img class="woman-shadow" src="img/woman-shadow.png" alt="">
+			</div>
+			<img class="tip-part1" src="img/tip-part1.png" alt="">
+			<img class="quicken-left" src="img/quicken-left.png" alt="">
+			<img class="quicken-right" src="img/quicken-right.png" alt="">
+		</div>
+
+		<!-- 第二关 -->
+		<div class="content content-part2">
+			<img class="parts" src="img/part2.png" alt="">
+			<div class="timer-box">
+				<img class="timer-1" src="img/timer-1.png" alt="">
+				<div class="timer-2"></div>
+				<div class="time">10s</div>
+			</div>
+			<div class="ball-box">
+				<img class="ball" src="img/ball.png" alt="">
+				<div class="ballTip"></div>
+			</div>
+			<img class="hand2" src="img/hand-2.png?v=1" alt="">
+			<img class="mans" src="img/mans.png" alt="">
+		</div>
+
+		<!-- 第三关 -->
+		<div class="content content-part3">
+			<img class="parts" src="img/part3.png" alt="">
+			<div class="timer-box">
+				<img class="timer-1" src="img/timer-1.png" alt="">
+				<div class="timer-2"></div>
+				<div class="time">5s</div>
+			</div>
+			<div class="shake-box">
+				<canvas class="circular1" id="circular1" width="597" height="597"></canvas>
+				<div class="hand-box">
+					<img class="hand" src="img/hand.png" alt="">
+				</div>
+			</div>
+			<div class="power-box"><span>0%</span></div>
+			<img class="tip-part2" src="img/tip-part2.png" alt="">
+		</div>
+
+		<!-- 第一关规则引导 -->
+		<div class="content content-guide content-guide-part1">
+			<img class="rule-part" src="img/rule-part1.png" alt="">
+			<img class="btn-go" src="img/btn-go.png" alt="">
+		</div>
+
+		<!-- 第二关规则引导 -->
+		<div class="content content-guide content-guide-part2">
+			<img class="rule-part" src="img/rule-part2.png" alt="">
+			<img class="btn-go" src="img/btn-go.png" alt="">
+		</div>
+
+		<!-- 第三关规则引导 -->
+		<div class="content content-guide content-guide-part3">
+			<img class="rule-part" src="img/rule-part3.png" alt="">
+			<img class="btn-go" src="img/btn-go.png" alt="">
+		</div>
+
+		<!-- 结果页 -->
+		<div class="content content-result" style="display: none;">
+			<img class="title-3" src="img/title-3.png" alt="">
+			<img class="btn-rank pulsean" src="img/btn-rank.png" alt="">
+			<div class="result-box">
+				<img class="grade" src="img/grade-1.png" alt="">
+				<img class="photo" src="img/photo.png" alt="">
+				<div class="name">晴空好帅</div>
+				<div class="score">80分，超过80%的人</div>
+				<div class="strip-box strip1">
+					<div class="strip"></div>
+				</div>
+				<div class="strip-box strip2">
+					<div class="strip"></div>
+				</div>
+				<div class="strip-box strip3">
+					<div class="strip"></div>
+				</div>
+
+				<div class="product-box">
+					<div class="product">
+						<div class="product-img">
+							<img class="product-img" src="https://www.pingan.com/app_images/pingan/v20/life/app/zijiayou.jpg">
+						</div>
+						<div class="text">
+							<div class="text-1">自驾游保险</div>
+							<div class="text-2">自驾游度身定制，保障意外和突发急性病等全方位风险；</div>
+							<div class="tag-box">
+								<span class="tag">保出行</span>
+								<span class="tag">7天19元起</span>
+							</div>
+							<img class="btn-see" src="img/btn-see.png" alt="">
+						</div>
+					</div>
+
+					<div class="product">
+						<div class="product-img">
+							<img class="product-img" src="https://www.pingan.com/app_images/pingan/v20/life/app/zijiayou.jpg">
+						</div>
+						<div class="text">
+							<div class="text-1">自驾游保险</div>
+							<div class="text-2">自驾游度身定制，保障意外和突发急性病等全方位风险；</div>
+							<div class="tag-box">
+								<span class="tag">保出行</span>
+								<span class="tag">7天19元起</span>
+							</div>
+							<img class="btn-see" src="img/btn-see.png" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="phone-box">
+				<div class="phone-title">你可预约平安业务员了解更多详情</div>
+				<div class="phone-identify clearfix">
+					<input class="phone" type="text" placeholder="请填写手机号码">
+					<div class="btn-identify">获取验证码</div>
+					<input class="identify" type="text" placeholder="验证码">
+					<div class="btn-submit">确认提交</div>
+				</div>
+			</div>
+
+			<img class="btn-replay" src="img/btn-replay.png" alt="">
+			<img class="btn-share" src="img/btn-share.png" alt="">
+		</div>
+
+		<!-- 排行榜 -->
+		<div class="content content-rank">
+			<div class="rank-box">
+				<img class="rank-top" src="img/bg-rank-top.png" alt="">
+				<div class="rank-list">
+					<table>
+						<tr>
+							<td class="list-photo">
+								<img src="img/photo.png" alt="">
+							</td>
+							<td class="list-name">最多显示十个</td>
+							<td class="list-score">100分</td>
+						</tr>
+						<tr>
+							<td class="list-photo">
+								<img src="img/photo.png" alt="">
+							</td>
+							<td class="list-name">最多显示十个</td>
+							<td class="list-score">100分</td>
+						</tr>
+						<tr>
+							<td class="list-photo">
+								<img src="img/photo.png" alt="">
+							</td>
+							<td class="list-name">最多显示十个</td>
+							<td class="list-score">100分</td>
+						</tr>
+						<tr>
+							<td class="list-photo">
+								<img src="img/photo.png" alt="">
+							</td>
+							<td class="list-name">最多显示十个</td>
+							<td class="list-score">100分</td>
+						</tr>
+						<tr>
+							<td class="list-photo">
+								<img src="img/photo.png" alt="">
+							</td>
+							<td class="list-name">最多显示十个</td>
+							<td class="list-score">100分</td>
+						</tr>
+						<tr>
+							<td class="list-photo">
+								<img src="img/photo.png" alt="">
+							</td>
+							<td class="list-name">最多显示十个</td>
+							<td class="list-score">100分</td>
+						</tr>
+						<tr>
+							<td class="list-photo">
+								<img src="img/photo.png" alt="">
+							</td>
+							<td class="list-name">最多显示十个</td>
+							<td class="list-score">100分</td>
+						</tr>
+						<tr>
+							<td class="list-photo">
+								<img src="img/photo.png" alt="">
+							</td>
+							<td class="list-name">最多显示十个</td>
+							<td class="list-score">100分</td>
+						</tr>
+						<tr>
+							<td class="list-photo">
+								<img src="img/photo.png" alt="">
+							</td>
+							<td class="list-name">最多显示十个</td>
+							<td class="list-score">100分</td>
+						</tr>
+						<tr>
+							<td class="list-photo">
+								<img src="img/photo.png" alt="">
+							</td>
+							<td class="list-name">最多显示十个</td>
+							<td class="list-score">100分</td>
+						</tr>
+					</table>
+				</div>
+				<div class="rank-user">
+					<img class="user-photo" src="img/photo.png" alt="">
+					<span class="user-name">晴空好帅</span>
+					<span class="user-score">100分</span>
+					<span class="user-rank">你当前排名是1234</span>
+				</div>
+				<img class="btn-close" src="img/btn-close.png" alt="">
+			</div>
+		</div>
+
+		<!-- 分享弹窗 -->
+		<div class="content content-share">
+			<img class="share" src="img/share.png" alt="">
+		</div>
+
+		<!-- 提示语弹窗 -->
+		<div class="tips">时间结束，下一关</div>
+
+		<!-- 每一关得分弹窗 -->
+		<div class="content content-score">
+			<div class="score-box">
+				<span class="this-score">100</span>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+	<script type="text/javascript" src="js/createjs.min.js"></script>
+	<script type="text/javascript" src="js/easeljs.min.js"></script>
+	<script type="text/javascript" src="js/preloadjs.min.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/common.js?v=25"></script>
+</body>
+</html>
